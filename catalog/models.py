@@ -103,6 +103,10 @@ class Author(models.Model):
         String for representing the Model object.
         """
         return '%s, %s' % (self.last_name, self.first_name)
+# 添加顺序
+
+    class Meta:
+        ordering = ['first_name']
 
 
 # see how languages benn used here
